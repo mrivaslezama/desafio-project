@@ -1,2 +1,61 @@
-<h1>Home#projects</h1>
-<p>Find me in app/views/home/projects.html.erb</p>
+<h1>Proyectos</h1>
+<p>Realizados </p>
+
+<br>
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card" style="height: 10rem;">
+      <%= image_tag "tiaromy.png"  %>
+      <div class="card-body">
+        <h5 class="card-title">Restaurante La Tia Romy</h5>
+        <p class="card-text">Página web desarrollada para emprendimiento familiar activo hasta el pasado enero.</p>
+        <p> Puedes ver este proyecto en github 
+            <%= link_to 'La Tia Romy',
+            'https://github.com/mrivaslezama/latiaromyrestaurante',
+            target: '_blank'
+            %>.
+        </p>
+        <a href="https://mrivaslezama.github.io/latiaromyrestaurante/" class="btn btn-primary">Visita la pagina</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <%= image_tag "autanamuebles.png"  %>
+      <div class="card-body">
+        <h5 class="card-title">Autana Muebles</h5>
+        <p class="card-text">Página web desarrollada para emprendimiento familiar (en proceso de construcción).</p>
+        <p> Puedes ver este proyecto en github 
+            <%= link_to 'Autana muebles',
+            'https://github.com/mrivaslezama/autanaweb',
+            target: '_blank'
+            %>.
+        </p>
+        <a href="https://autanaweb.vercel.app/" class="btn btn-primary">Visita la pagina</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <%= image_tag "presentacion.png"  %>
+      <div class="card-body">
+        <h5 class="card-title">Portafolio</h5>
+        <p class="card-text">Página web personal, proyecto en desarrollo.</p>
+        <p> Puedes ver este proyecto en github mi
+            <%= link_to 'Portafolio',
+            'https://github.com/mrivaslezama/portfolio',
+            target: '_blank'
+            %>.
+        </p>
+        <a href="https://presentacionmr.vercel.app/" class="btn btn-primary">Visita la pagina</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<%= link_to "Inicio", "/" %>
+<%= link_to "Contacto", "/home/contact" %>
